@@ -34,18 +34,19 @@ The main evaluation method is the **human-in-the-loop** method. Key success metr
 
 ## How to Run the Project?
 To run the project:
-1- Create a Virtual Environment and Activate It (Optional but Ideal):
+1. Create a Virtual Environment and Activate It (Optional but Ideal):
 `python -m venv venv`
 `venv\Scripts\activate`
-2- Install Dependencies:
+2. Install Dependencies:
 `pip install -r requirements.txt`
-3- Environment Variables Set-up:
+3. Environment Variables Set-up:
 Create a .env file that contains your API keys:
 
-```ANTHROPIC_API_KEY = "INSERT YOUR KEY"
+`ANTHROPIC_API_KEY = "INSERT YOUR KEY"
 SERPAPI_API_KEY = "INSERT YOUR KEY"
 EXA_API_KEY = "INSERT YOUR KEY"
-GOOGLE_API_KEY = "INSERT YOUR KEY"```
+GOOGLE_API_KEY = "INSERT YOUR KEY"`
+
 4- Run the app:
 `streamlit run app.py`
 
