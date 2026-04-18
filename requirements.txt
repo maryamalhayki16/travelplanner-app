@@ -16,3 +16,4 @@ crewai-tools
 google-generativeai
 serpapi
 exa-py
+tiktoken==0.7.0
