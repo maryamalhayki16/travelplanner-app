@@ -1,21 +1,18 @@
-streamlit==1.37.1
-requests==2.32.3
+streamlit
+requests
 
-fastapi==0.115.0
-uvicorn==0.30.6
+fastapi
+uvicorn
 
-python-dotenv==1.0.1
+python-dotenv
 
-pydantic==2.7.4
-pydantic-core==2.18.4
+pydantic
+pydantic-core
 
-langchain==0.2.14
-langchain-community==0.2.12
-langchain-anthropic==0.1.23
 
 crewai
 crewai-tools
 
-google-generativeai==0.7.2
-serpapi==0.1.5
-exa-py==1.6.0
+google-generativeai
+serpapi
+exa-py
