@@ -1,0 +1,11 @@
+langchain
+langchain-community
+langchain-openai
+langchain-anthropic
+python-dotenv
+pydantic
+crewai
+crewai_tools
+requests
+exa-py
+httpx
