@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-BASE_URL = "http://127.0.0.1:8000"
+BASE_URL = "https://travelplanner-app-xdsx.onrender.com/docs"
 
 st.markdown(
     """
