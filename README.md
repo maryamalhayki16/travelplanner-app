@@ -35,8 +35,10 @@ The main evaluation method is the **human-in-the-loop** method. Key success metr
 ## How to Run the Project?
 To run the project:
 1. Create a Virtual Environment and Activate It (Optional but Ideal):\
-`python -m venv venv`
-`venv\Scripts\activate`
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
 2. Install Dependencies:\
 `pip install -r requirements.txt`
 3. Environment Variables Set-up:\
