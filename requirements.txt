@@ -7,4 +7,4 @@ crewai
 crewai-tools
 google-generativeai
 serpapi
-exa_py
+exa-py
