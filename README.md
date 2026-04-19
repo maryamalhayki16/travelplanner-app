@@ -49,9 +49,29 @@ EXA_API_KEY = "INSERT YOUR KEY"
 GOOGLE_API_KEY = "INSERT YOUR KEY"
 ```
 4- Run the backend server:\
-`uvicorn main:app --reload`
+`uvicorn main:app --reload`\
 5- Run the app:\
 `streamlit run app.py`
+
+## Repository Structure
+```
+travelplanner-app/
+│
+├── app.py                # Main Streamlit app
+├── main.py               # App logic and agents
+├── requirements.txt      # Dependencies
+├── .env                  # Environment variables (not pushed, but needs to be created)
+└── README.md
+```
+
 ## Limitations and Future Work
+**Limitations**:
+- Dependent on API availability and rate limits
+- LLM responses may not always be perfectly accurate; prone to hallucinations
+- Real-time pricing may fluctuate
+**Future Enhancements**:
+- Add real-time booking integration
+- Improve ranking algorithm
+- Add user accounts & saved trips
 
 ## Demo Video
