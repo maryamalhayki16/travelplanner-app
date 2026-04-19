@@ -8,3 +8,4 @@ crewai-tools
 google-generativeai
 serpapi
 exa-py
+crewai[google-genai]
