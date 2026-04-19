@@ -34,12 +34,12 @@ The main evaluation method is the **human-in-the-loop** method. Key success metr
 
 ## How to Run the Project?
 To run the project:
-1. Create a Virtual Environment and Activate It (Optional but Ideal):\n
+1. Create a Virtual Environment and Activate It (Optional but Ideal):\
 `python -m venv venv`
 `venv\Scripts\activate`
-2. Install Dependencies:
+2. Install Dependencies:\
 `pip install -r requirements.txt`
-3. Environment Variables Set-up:
+3. Environment Variables Set-up:\
 Create a .env file that contains your API keys:
 
 ```
@@ -48,10 +48,10 @@ SERPAPI_API_KEY = "INSERT YOUR KEY"
 EXA_API_KEY = "INSERT YOUR KEY"
 GOOGLE_API_KEY = "INSERT YOUR KEY"
 ```
-
-4- Run the app:
+4- Run the backend server:\
+`uvicorn main:app --reload`
+5- Run the app:\
 `streamlit run app.py`
-
 ## Limitations and Future Work
 
 ## Demo Video
