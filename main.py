@@ -7,7 +7,7 @@ import asyncio
 from typing import List, Optional
 from dotenv import load_dotenv
 from pydantic import BaseModel
-from langchain_anthropic import ChatAnthropic
+#from langchain_anthropic import ChatAnthropic
 from crewai import Agent, Task, Crew, Process, LLM
 from crewai_tools import EXASearchTool
 from fastapi import FastAPI, HTTPException
