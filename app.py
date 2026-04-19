@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-BASE_URL = "https://travelplanner-app-xdsx.onrender.com/docs"
+BASE_URL = "https://travelplanner-app-xdsx.onrender.com"
 
 st.markdown(
     """
@@ -225,7 +225,6 @@ if st.session_state.results:
     with tab3:
         st.markdown("### ✈️ Flight Recommendation")
         with st.container(border=True):
-            st.markdown("### ✈️ Flight Recommendation")
             ai_flights = results["flights"].get("ai_flight_recommendation")
             st.markdown(ai_flights)
 
