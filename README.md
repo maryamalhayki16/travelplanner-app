@@ -46,7 +46,7 @@ Create a .env file that contains your API keys:
 ANTHROPIC_API_KEY = "INSERT YOUR KEY"
 SERPAPI_API_KEY = "INSERT YOUR KEY"
 EXA_API_KEY = "INSERT YOUR KEY"
-GOOGLE_API_KEY = "INSERT YOUR KEY"```
+GOOGLE_API_KEY = "INSERT YOUR KEY"
 
 4- Run the app:
 `streamlit run app.py`
