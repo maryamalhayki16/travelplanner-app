@@ -137,6 +137,26 @@ def render_hotels(hotels, cols_num=3):
                 else:
                     st.caption("No amenities listed")
 
+
+def post_request(endpoint, payload, label):
+    try:
+        res = requests.post(f"{BASE_URL}{endpoint}", json=payload)
+
+        if res.status_code != 200:
+            st.error(f"{label} API error: {res.status_code}")
+            st.code(res.text)
+            return None
+
+        if not res.text.strip():
+            st.error(f"{label} API returned empty response")
+            return None
+
+        return res.json()
+
+    except Exception as e:
+        st.error(f"{label} request failed: {e}")
+        return None
+
 if st.button("🚀 Generate My Trip"):
 
     if not source or not arrival or not destination:
@@ -168,17 +188,25 @@ if st.button("🚀 Generate My Trip"):
         }
 
         try:
-            flights_res = requests.post(f"{BASE_URL}/search_flights/", json=flight_payload).json()
-            hotels_res = requests.post(f"{BASE_URL}/search_hotels/", json=hotel_payload).json()
-
-            itinerary_res = requests.post(
-                f"{BASE_URL}/generate/itinerary",
-                json={
+            flights_res = post_request("/search_flights/", flight_payload, "Flights")
+            if not flights_res:
+                st.stop()
+                
+            hotels_res = post_request("/search_hotels/", hotel_payload, "Hotels")
+            if not hotels_res:
+                st.stop()
+                
+            itinerary_res = post_request(
+                "/generate/itinerary",
+                {
                     "itinerary_request": itinerary_payload,
                     "flight_request": flight_payload,
                     "hotel_request": hotel_payload
-                }
-            ).json()
+                },
+                "Itinerary"
+            )
+            if not itinerary_res:
+                st.stop()
             
 
             st.session_state.results = {
