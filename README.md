@@ -68,7 +68,7 @@ travelplanner-app/
 **Limitations**:
 - Dependent on API availability and rate limits
 - LLM responses may not always be perfectly accurate; prone to hallucinations
-- Real-time pricing may fluctuate
+- Real-time pricing may fluctuate\
 **Future Enhancements**:
 - Add real-time booking integration
 - Improve ranking algorithm
