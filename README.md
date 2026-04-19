@@ -14,8 +14,8 @@ This project aims to simplify the travel planning process by using AI to:
 The project uses flight and hotel data retrieved from APIs (SerpAPI), and user inputs to personalize the itinerary.
 
 ## Model Architecture
-There are two main *components* for this project:
-**- AI Agents (CrewAI):** analyze and recommend the best flight and hotel options, and generate the itinerary.
+There are two main *components* for this project:\
+**- AI Agents (CrewAI):** analyze and recommend the best flight and hotel options, and generate the itinerary.\
 **- LLM (Google Gemini):** used for reasoning and recommendations, acting like the brain of the agents.
 
 As for the *pipeline*, this approach was utilized:
